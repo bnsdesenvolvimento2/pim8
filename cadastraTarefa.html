@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ATM 0.9 - Controle Pessoal de Tarefas Acadêmicas.</title>
+        <script type="text/javascript" src="scripts/functions.js"></script>
+        <link rel="stylesheet" type="text/css" href="styles/dark.css">
+    </head>
+    <body>
+        <H1>Cadastro de Tarefas</H1> 
+
+        <p>Para cadastrar uma nova tarefa no sistema, preencha o formulário abaixo.</p> 
+        
+        
+
+        <form action ="#"  method="post">
+            
+            <div>
+                <label for="nomeTarefa">Nome da tarefa: </label>
+                <input type="text" id="nomeTarefa" name="nomeTarefa">
+                <br>
+                <br>
+            </div>
+
+            <div>
+                <label for="dataLimite">Data limite: </label>
+                <input type="date" id="dataLimite" name="dataLimite">
+                <br>
+                <br>
+            </div>
+
+
+            <div>
+                <label for="descricaoTarefa">Descrição: </label><br>
+                <textarea id="descricaoTarefa" cols="80" rows="15" name="descricaoTarefa"></textarea>
+                <br>
+            </div>
+                <input type="button" onclick="entraSistema(this);" value="Enviar" >
+                <input type="button" onclick="telaInicial.html" value="Voltar" >
+            
+        </form>
+    </body>
+</html>

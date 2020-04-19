@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ATM 0.9 - Controle Pessoal de Tarefas Acadêmicas.</title>
+        <script type="text/javascript" src="scripts/functions.js"></script>
+        <link rel="stylesheet" type="text/css" href="styles/dark.css">
+    </head>
+    <body>
+        <H1>Benvindo ao ATM 0.9!</H1> 
+
+        <p>Este é o seu controle pessoal de tarefas acadêmicas da UNIP.</p> 
+        <!-- <input type="button" onclick="execute();"> -->
+        <p>Para entrar no sistema, digite seu RA e senha nos campos abaixo:</p>
+
+        <form action ="telaInicial.html"  method="post">
+            
+             <p>
+            <label for="RA">RA: </label>
+                <input type="text" id="RA" name="ra">
+            <br>
+            </p>
+            <p>
+            <label for="senha">Senha: </label>
+                <input type="password" id="senha" name="senha">
+            <br>
+            </p>
+                <input type="button" onclick="entraSistema(this);" value="Enviar" >
+            
+        </form>
+    </body>
+</html>

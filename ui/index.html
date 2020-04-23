@@ -10,37 +10,88 @@
     <body>
         <H1>Benvindo ao ATM 0.9!</H1> 
 
-        <p>Este é o seu controle pessoal de tarefas acadêmicas da UNIP.</p> 
-        <p>Escolha o que deseja fazer: </p>
-        
+        <p>Este é o seu controle pessoal de tarefas acadêmicas da UNIP.</p>
+        <p>Se quiser cadastrar uma nova tarefa, <a href="cadastraTarefa.html"> <input type="button"  value="Clique aqui"></a></p> 
+        <p>Veja abaixo a lista de tarefas, selecione aquelas que você deseja excluir e/ou aquela que deseja alterar.</p>
+        <p>Para ver uma descrição de qualquer tarefa, passe o mouse sobre ela.</p>
         <form action="#">
             <div>
-                <input type="radio" id="alteraTarefa" name="telaInicial" value="Alterar tarefas">
-                <label for="alteraTarefa">Alterar tarefa</label>
-                <br>
-                <br>
+                <table>
+                
+                    <tr>
+                        <td> Tarefa</td>
+                        <td></td>
+                        <td></td>
+                        <td>Data limite</td>
+                        <td></td>
+
+                    </tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr>
+                        <td onmouseover="alert('Descrição: Bla bla bla.');">Tarefa 1</td>
+                        <td></td>
+                        <td></td>
+                        <td>25/09/2020</td>
+                        <td></td>
+                        <td><input type="radio" id="alteraTarefa1" name="telaInicial" value="Alterar tarefas">
+                            <label for="alteraTarefa">Alterar</label></td>
+                        <td><input type="checkbox" id="excluiTarefa1" name="tarefa1" value="tarefa1">
+                            <label for="excluiTarefa">Excluir</label></td>
+                    </tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+
+                    
+                    <tr>
+                        <td onmouseover="alert('Descrição: Bla bla bla.');">Tarefa 2</td>
+                        <td></td>
+                        <td></td>
+                        <td>25/10/2020</td>
+                        <td></td>
+                        <td><input type="radio" id="alteraTarefa2" name="telaInicial" value="Alterar tarefas">
+                            <label for="alteraTarefa">Alterar</label></td>
+                        <td><input type="checkbox" id="excluiTarefa2" name="tarefa2" value="tarefa2">
+                            <label for="excluiTarefa">Excluir</label></td>
+                    </tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+
+                    <tr>
+                        <td onmouseover="alert('Descrição: Bla bla bla.');">Tarefa 3</td>
+                        <td></td>
+                        <td></td>
+                        <td>25/09/2020</td>
+                        <td></td>
+                        <td><input type="radio" id="alteraTarefa3" name="telaInicial" value="Alterar tarefas">
+                            <label for="alteraTarefa">Alterar</label></td>
+                        <td><input type="checkbox" id="excluiTarefa3" name="tarefa3" value="tarefa3">
+                            <label for="excluiTarefa">Excluir</label></td>
+                    </tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr>
+                        <td onmouseover="alert('Descrição: Bla bla bla.');">Tarefa 4</td>
+                        <td></td>
+                        <td></td>
+                        <td>25/09/2020</td>
+                        <td></td>
+                        <td><input type="radio" id="alteraTarefa1" name="telaInicial" value="Alterar tarefas">
+                            <label for="alteraTarefa">Alterar</label></td>
+                        <td><input type="checkbox" id="excluiTarefa1" name="tarefa4" value="tarefa4">
+                            <label for="excluiTarefa">Excluir</label></td>
+                    </tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+
+                </table>
             </div>
             
-            <div>
-                <input type="radio" id="cadastraTarefa" name="telaInicial" value="Cadastrar tarefas">
-                <label for="cadastraTarefa">Cadastrar tarefa</label>
-                <br>
-                <br>
-            </div>
-            
-            <div>
-                <input type="radio" id="excluiTarefa" name="telaInicial" value="Excluir tarefas">
-                <label for="excluiTarefa">Excluir tarefa</label>
-                <br>
-                <br>
-            </div>
-            
-            <div>
-                <input type="radio" id="listaTarefa" name="telaInicial" value="Listar Tarefas">
-                <label for="listaTarefa"> Listar tarefas</label>
-                <br>
-                <br>
-            </div>
             
             <div><input type="submit" value="enviar"></div>   
         </form>

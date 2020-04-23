@@ -8,43 +8,37 @@
         <link rel="stylesheet" type="text/css" href="styles/dark.css">
     </head>
     <body>
-        <H1>Altera tarefa</H1> 
+        <H1>Altera Tarefa</H1> 
 
-        <p>A lista de tarefas cadastradas vai a seguir.  Para alterar qualquer delas, clique no botão ao seu lado. </p>
+        <p>Para alterar a tarefa no sistema, preencha o formulário abaixo.</p> 
         
-        <form action="#">
+        
+
+        <form action ="#"  method="post">
+            
             <div>
-                <input type="radio" id="tarefa1" name="tarefas" value="tarefa1">
-                <label for="alteraTarefa">Tarefa 1</label>
+                <label for="nomeTarefa">Nome da tarefa: </label>
+                <input type="text" id="nomeTarefa" name="nomeTarefa">
                 <br>
                 <br>
             </div>
-            
+
             <div>
-                <input type="radio" id="tarefa2" name="tarefas" value="tarefa2">
-                <label for="alteraTarefa">Tarefa 2</label>
+                <label for="dataLimite">Data limite: </label>
+                <input type="date" id="dataLimite" name="dataLimite">
                 <br>
                 <br>
             </div>
-            
+
+
             <div>
-                <input type="radio" id="tarefa3" name="tarefas" value="tarefa3">
-                <label for="alteraTarefa">Tarefa 3</label>
-                <br>
+                <label for="descricaoTarefa">Descrição: </label><br>
+                <textarea id="descricaoTarefa" cols="80" rows="15" name="descricaoTarefa"></textarea>
                 <br>
             </div>
+                <input type="button" onclick="entraSistema(this);" value="Enviar" >
+                <input type="button" onclick="telaInicial.html" value="Voltar" >
             
-            <div>
-                <input type="radio" id="tarefa4" name="tarefas" value="tarefa4">
-                <label for="alteraTarefa">Tarefa 4</label>
-                <br>
-                <br>
-            </div>
-            
-            <div>
-                <input type="submit" value="enviar">
-                <input type="button" value="voltar">
-            </div>   
         </form>
     </body>
 </html>

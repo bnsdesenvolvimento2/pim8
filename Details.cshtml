@@ -1,0 +1,44 @@
+﻿@model ATM.Models.Tarefa
+
+<div>
+    <h4>Tarefa</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NomeTarefa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NomeTarefa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Descricao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descricao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Disciplina)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Disciplina)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Data)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Data)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.TarefaID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
